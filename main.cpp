@@ -1,11 +1,11 @@
-
 #include <iostream>
-#include "include/exampleObject.h"
+#include "rapidxml.hpp"
+#include <fstream>
+using namespace rapidxml;
 using namespace std;
 
 int main()
 {
-    Animal cat;
-    cat.speak();
+    //nothing here yet :D
     return 0;
 }
