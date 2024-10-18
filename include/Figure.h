@@ -4,10 +4,8 @@
 
 class Figure
 {
-    
+
     public:
-        Figure();
-        ~Figure();
         virtual void draw() = 0;
 };
 
