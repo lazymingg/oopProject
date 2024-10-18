@@ -3,9 +3,10 @@
 
 #include <iostream>
 #include "Point.h"
+#include "Figure.h"
 using namespace std;
 
-class Line
+class Line : public Figure
 {
     private:
         Point p1;
@@ -18,6 +19,6 @@ class Line
         void setP2(Point p2);
         Point getP1();
         Point getP2();
-        void print();
+        void draw() override;
 };
 #endif
