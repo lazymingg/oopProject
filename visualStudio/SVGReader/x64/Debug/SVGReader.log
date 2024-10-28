@@ -1,7 +1,0 @@
-﻿  Figure.cpp
-  Line.cpp
-  Point.cpp
-  SVGParser.cpp
-C:\Users\minhn\source\repos\SVGReader\SVGParser.cpp(79,26): warning C4566: character represented by universal-character-name '\u1ED9' cannot be represented in the current code page (1252)
-  Generating Code...
-  SVGReader.vcxproj -> C:\Users\minhn\source\repos\SVGReader\x64\Debug\SVGReader.exe
