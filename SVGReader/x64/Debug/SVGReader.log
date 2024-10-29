@@ -1,9 +1,2 @@
-﻿  Figure.cpp
-  Line.cpp
-  Point.cpp
-  SVGParser.cpp
-  SVGReader.cpp
-D:\HK4\oop\theory\oopProject\visualStudio\SVGParser.cpp(79,26): warning C4566: character represented by universal-character-name '\u1ED9' cannot be represented in the current code page (1252)
-D:\HK4\oop\theory\oopProject\visualStudio\SVGReader.cpp(64,15): warning C4244: 'return': conversion from 'WPARAM' to 'int', possible loss of data
-  Generating Code...
-  SVGReader.vcxproj -> D:\HK4\oop\theory\oopProject\visualStudio\x64\Debug\SVGReader.exe
+﻿  Polygon.cpp
+  SVGReader.vcxproj -> D:\HK4\oop\theory\oopProject\x64\Debug\SVGReader.exe

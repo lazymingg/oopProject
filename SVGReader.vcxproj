@@ -131,6 +131,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Polygon.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SVGParser.h" />
     <ClInclude Include="SVGReader.h" />
@@ -140,6 +141,7 @@
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Polygon.cpp" />
     <ClCompile Include="SVGParser.cpp" />
     <ClCompile Include="SVGReader.cpp" />
   </ItemGroup>
