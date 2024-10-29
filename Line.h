@@ -4,11 +4,15 @@
 #include <iostream>
 #include "Point.h"
 #include "Figure.h"
+#include "extendLib/rapid_xml/rapidxml.hpp"
+
 using namespace std;
+using namespace rapidxml;
 
 class Line : public Figure
 {
 private:
+	xml_node<>* root_node;
     Point p1;
     Point p2;
 public:
@@ -21,4 +25,5 @@ public:
     Point getP2();
     void draw() override;
 };
+
 #endif
