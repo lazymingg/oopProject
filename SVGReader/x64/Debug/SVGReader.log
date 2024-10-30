@@ -1,2 +1,121 @@
-﻿  Polygon.cpp
-  SVGReader.vcxproj -> D:\HK4\oop\theory\oopProject\x64\Debug\SVGReader.exe
+﻿  Figure.cpp
+  Line.cpp
+  Point.cpp
+D:\HK4\oop\theory\oopProject\Line.h(16,5): error C2872: 'Point': ambiguous symbol
+  (compiling source file 'Line.cpp')
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.h(17,5): error C2872: 'Point': ambiguous symbol
+  (compiling source file 'Line.cpp')
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.h(20,10): error C2872: 'Point': ambiguous symbol
+  (compiling source file 'Line.cpp')
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.h(20,20): error C2872: 'Point': ambiguous symbol
+  (compiling source file 'Line.cpp')
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.h(22,16): error C2872: 'Point': ambiguous symbol
+  (compiling source file 'Line.cpp')
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.h(23,16): error C2872: 'Point': ambiguous symbol
+  (compiling source file 'Line.cpp')
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.h(24,5): error C2872: 'Point': ambiguous symbol
+  (compiling source file 'Line.cpp')
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.h(25,5): error C2872: 'Point': ambiguous symbol
+  (compiling source file 'Line.cpp')
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.cpp(7,12): error C2872: 'Point': ambiguous symbol
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.cpp(7,22): error C2872: 'Point': ambiguous symbol
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.cpp(16,18): error C2872: 'Point': ambiguous symbol
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.cpp(20,18): error C2872: 'Point': ambiguous symbol
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.cpp(24,1): error C2872: 'Point': ambiguous symbol
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Line.cpp(28,1): error C2872: 'Point': ambiguous symbol
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      could be 'Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      or       'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Point.cpp(8,8): error C2511: 'Point::Point(int,int)': overloaded member function not found in 'Point'
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      see declaration of 'Point'
+  
+D:\HK4\oop\theory\oopProject\Point.cpp(10,5): error C2671: 'Point::{ctor}': static member functions do not have 'this' pointers
+D:\HK4\oop\theory\oopProject\Point.cpp(11,5): error C2671: 'Point::{ctor}': static member functions do not have 'this' pointers
+D:\HK4\oop\theory\oopProject\Point.cpp(17,13): error C2511: 'void Point::setX(int)': overloaded member function not found in 'Point'
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      see declaration of 'Point'
+  
+D:\HK4\oop\theory\oopProject\Point.cpp(19,5): error C2671: 'Point::setX': static member functions do not have 'this' pointers
+D:\HK4\oop\theory\oopProject\Point.cpp(21,13): error C2511: 'void Point::setY(int)': overloaded member function not found in 'Point'
+      D:\HK4\oop\theory\oopProject\Point.h(7,7):
+      see declaration of 'Point'
+  
+D:\HK4\oop\theory\oopProject\Point.cpp(23,5): error C2671: 'Point::setY': static member functions do not have 'this' pointers
+  Polygon.cpp
+D:\HK4\oop\theory\oopProject\Polygon.cpp(79,35): error C2039: 'getX': is not a member of 'Gdiplus::Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      see declaration of 'Gdiplus::Point'
+  
+D:\HK4\oop\theory\oopProject\Polygon.cpp(79,68): error C2039: 'getY': is not a member of 'Gdiplus::Point'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GdiplusTypes.h(301,7):
+      see declaration of 'Gdiplus::Point'
+  
+  Generating Code...
