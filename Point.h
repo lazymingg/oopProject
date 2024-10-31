@@ -3,20 +3,24 @@
 
 #include <iostream>
 using namespace std;
+// define my point class
 
-class Point
+namespace MyPoint
 {
-private:
-    double x;
-    double y;
-public:
-    Point();
-    Point(double x, double y);
-    ~Point();
-    void setX(double x);
-    void setY(double y);
-    double getX();
-    double getY();
-    void print();
-};
+    class Point
+    {
+    private:
+        int x;
+        int y;
+    public:
+        Point();
+        Point(int x, int y);
+        ~Point();
+        void setX(int x);
+        void setY(int y);
+        int getY();
+        int getX();
+        void print();
+    };
+}
 #endif

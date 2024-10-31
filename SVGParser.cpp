@@ -62,6 +62,17 @@ void SVGParser::loadFile(const string& fileName) {
     }
 }
 
+xml_node<>* SVGParser::getRootNodeName(string nodeName)
+{
+    xml_node<>* tempNode;
+	tempNode = root_node->first_node(nodeName.c_str());
+    if (tempNode)
+    {
+        return tempNode;
+    }
+    return nullptr;
+}
+
 void SVGParser::print()
 {
     // for (xml_node<> *node = root_node->first_node(); node; node = node->next_sibling())
