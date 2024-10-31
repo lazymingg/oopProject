@@ -15,6 +15,7 @@ namespace MyPoint
     public:
         Point();
         Point(int x, int y);
+        Point(const Point& other);
         ~Point();
         void setX(int x);
         void setY(int y);

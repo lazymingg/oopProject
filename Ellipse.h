@@ -1,17 +1,34 @@
-#ifndef _ELLIPSE_H_
-#define _ELLIPSE_H_
+#ifndef ELLIPSE_H
+#define ELLIPSE_H
 
-#include "Point.h"
 #include "Figure.h"
+#include "Point.h"
 
-class Ellipse : public Figure
-{
-private:
+namespace MyFigure {
+	class Ellipse : public Figure
+	{
+	private:
+		xml_node<>* root_node;
+		MyPoint::Point center;
+		INT rx;
+		INT ry;
+		Color strokeColor;
+		INT strokeWidth;
+		Color fill;
+		Graphics& graphics;
+	public:
+		// Default constructor
+		Ellipse();
 
-	
+		// Parameterized constructor
+		Ellipse(MyPoint::Point center, INT rx, INT ry, Color strokeColor, INT strokeWidth, Color fill);
 
-};
+		// Copy constructor
+		Ellipse(const Ellipse& other);
+
+		void drawEllipse(Graphics& graphics);
+		void draw() override;
+	};
+}
 
 #endif
-
-//<ellipse cx = "500" cy = "100" rx = "100" ry = "50" stroke = "rgb(255, 255, 0)" stroke - width = "3" fill = "rgb(0, 255, 0)" stroke - opacity = "0.7" fill - opacity = "0.5" / >

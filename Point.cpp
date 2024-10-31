@@ -5,11 +5,19 @@ MyPoint::Point::Point()
     x = 0;
     y = 0;
 }
+
 MyPoint::Point::Point(int x, int y)
 {
     this->x = x;
     this->y = y;
 }
+
+MyPoint::Point::Point(const Point& other)
+{
+    this->x = other.x;
+    this->y = other.y;
+}
+
 MyPoint::Point::~Point()
 {
     //nothing to do here
