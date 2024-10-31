@@ -10,17 +10,20 @@ using namespace Gdiplus;
 using namespace std;
 using namespace rapidxml;
 
-class Polygon : public Figure
+namespace MyFigure
 {
-private:
-	xml_node<>* rootNode;
-	SVGAttributes attributes;
-	vector <MyPoint::Point> points;
-public:
-	Polygon(xml_node<>* rootNode);
-	//to string
-	string toString();
-	void draw() override;
-};
+	class Polygon : public Figure
+	{
+	private:
+		xml_node<>* rootNode;
+		SVGAttributes attributes;
+		vector <MyPoint::Point> points;
+	public:
+		Polygon(xml_node<>* rootNode);
+		//to string
+		void printInfomation();
+		void draw() override;
+	};
+}
 
 #endif

@@ -4,7 +4,7 @@ using namespace Gdiplus;
 using namespace std;
 using namespace rapidxml;
 
-Polygon::Polygon(xml_node<>* rootNode)
+MyFigure::Polygon::Polygon(xml_node<>* rootNode)
 {
 	this->rootNode = rootNode;
 	// Set attributes
@@ -70,20 +70,16 @@ Polygon::Polygon(xml_node<>* rootNode)
 
 }	
 
-string Polygon::toString()
+void MyFigure::Polygon::printInfomation()
 {
-	string result = "Polygon\n";
-	result += "Points: ";
-	for (MyPoint::Point point : points)
-	{
-		result += "(" + to_string(point.getX()) + ", " + to_string(point.getY()) + ") ";
-	}
-	result += "\n";
-	result += "Attributes: ";
+	cout << "polygon" << endl;
 	attributes.printAttributes();
-	return result;
+	for (int i = 0; i < points.size(); i++)
+	{
+		points[i].print();
+	}
 }
-void Polygon::draw()
+void MyFigure::Polygon::draw()
 {
 	cout << "Drawing a polygon" << endl;
 }
