@@ -51,3 +51,75 @@ void SVGAttributes::printAttributes() const {
         << "Stroke Dasharray: " << strokeDasharray << "\n"
         << "Transform: " << transform << "\n";
 }
+
+//string format = "rgb(255, 0, 0)";
+void SVGAttributes::setFillColor(std::string str)
+{
+	if (str == "none")
+	{
+		fillColor = Gdiplus::Color(0, 0, 0, 0);
+		return;
+	}
+	if (str[0] == '#')
+	{
+		int r = std::stoi(str.substr(1, 2), nullptr, 16);
+		int g = std::stoi(str.substr(3, 2), nullptr, 16);
+		int b = std::stoi(str.substr(5, 2), nullptr, 16);
+		fillColor = Gdiplus::Color(255, r, g, b);
+		return;
+	}
+	if (str.substr(0, 3) == "rgb")
+	{
+		int r, g, b;
+		sscanf_s(str.c_str(), "rgb(%d, %d, %d)", &r, &g, &b);
+		fillColor = Gdiplus::Color(255, r, g, b);
+		return;
+	}
+	if (str.substr(0, 4) == "rgba")
+	{
+		int r, g, b, a;
+		sscanf_s(str.c_str(), "rgba(%d, %d, %d, %d)", &r, &g, &b, &a);
+		fillColor = Gdiplus::Color(a, r, g, b);
+		return;
+	}
+}
+Gdiplus::Color SVGAttributes::getFillColor() const
+{
+	return fillColor;
+}
+
+void SVGAttributes::setStrokeColor(std::string str)
+{
+	if (str == "none")
+	{
+		strokeColor = Gdiplus::Color(0, 0, 0, 0);
+		return;
+	}
+	if (str[0] == '#')
+	{
+		int r = std::stoi(str.substr(1, 2), nullptr, 16);
+		int g = std::stoi(str.substr(3, 2), nullptr, 16);
+		int b = std::stoi(str.substr(5, 2), nullptr, 16);
+		strokeColor = Gdiplus::Color(255, r, g, b);
+		return;
+	}
+	if (str.substr(0, 3) == "rgb")
+	{
+		int r, g, b;
+		sscanf_s(str.c_str(), "rgb(%d, %d, %d)", &r, &g, &b);
+		strokeColor = Gdiplus::Color(255, r, g, b);
+		return;
+	}
+	if (str.substr(0, 4) == "rgba")
+	{
+		int r, g, b, a;
+		sscanf_s(str.c_str(), "rgba(%d, %d, %d, %d)", &r, &g, &b, &a);
+		strokeColor = Gdiplus::Color(a, r, g, b);
+		return;
+	}
+}
+
+Gdiplus::Color SVGAttributes::getStrokeColor() const
+{
+	return strokeColor;
+}

@@ -3,6 +3,10 @@
 
 #include <string>
 #include <iostream>
+#include <Windows.h>
+#include <gdiplus.h>
+
+#pragma comment(lib, "Gdiplus.lib")
 
 class SVGAttributes {
 private:
@@ -16,6 +20,9 @@ private:
     std::string strokeLinejoin;  // Kiểu nối viền
     std::string strokeDasharray; // Mẫu nét đứt
     std::string transform;       // Biến đổi hình dạng
+
+	Gdiplus::Color fillColor;             // Màu lấp đầy dạng Color
+	Gdiplus::Color strokeColor;           // Màu viền dạng Color
 
 public:
     // Constructor
@@ -54,6 +61,12 @@ public:
 
     // Print attributes
     void printAttributes() const;
+
+	void setFillColor(std::string str);
+    Gdiplus::Color getFillColor() const;
+
+    void setStrokeColor(std:: string str);
+	Gdiplus::Color getStrokeColor() const;
 };
 
 #endif // _SVGATTRIBUTES_H_

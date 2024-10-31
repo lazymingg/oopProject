@@ -1,5 +1,3 @@
-﻿  Polygon.cpp
-  SVGReader.cpp
-D:\HK4\oop\theory\oopProject\SVGReader.cpp(93,15): warning C4244: 'return': conversion from 'WPARAM' to 'int', possible loss of data
-  Generating Code...
+﻿  SVGReader.cpp
+D:\HK4\oop\theory\oopProject\SVGReader.cpp(91,15): warning C4244: 'return': conversion from 'WPARAM' to 'int', possible loss of data
   SVGReader.vcxproj -> D:\HK4\oop\theory\oopProject\x64\Debug\SVGReader.exe

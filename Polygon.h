@@ -9,7 +9,6 @@
 using namespace Gdiplus;
 using namespace std;
 using namespace rapidxml;
-
 namespace MyFigure
 {
 	class Polygon : public Figure
@@ -18,8 +17,10 @@ namespace MyFigure
 		xml_node<>* rootNode;
 		SVGAttributes attributes;
 		vector <MyPoint::Point> points;
+		Graphics &graphics;
 	public:
-		Polygon(xml_node<>* rootNode);
+		//intialyze list 
+		Polygon(xml_node<>* rootNode, Gdiplus::Graphics& graphics);
 		//to string
 		void printInfomation();
 		void draw() override;

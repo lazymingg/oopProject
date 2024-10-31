@@ -12,18 +12,16 @@ VOID OnPaint(HDC hdc)
 	SVGParser parser;
 	parser.loadFile("sample.svg");
 	xml_node<>* temp = parser.getRootNodeName("polygon");
-	// print all attributes of the root node
-	/*xml_attribute<>* attribute = temp->first_attribute();
-	while (attribute != NULL)
-	{
-		string name = attribute->name();
-		string value = attribute->value();
-		cout << name << ": " << value << endl;
-		attribute = attribute->next_attribute();
-	}*/
-	MyFigure::Polygon polygon(temp);
-	polygon.printInfomation();
-    //Graphics graphics(hdc);
+    Graphics graphics(hdc);
+	MyFigure::Polygon polygon(temp, graphics);
+	//polygon.printInfomation();
+	polygon.draw();
+	//draw next polygon
+	temp = temp->next_sibling("polygon");
+	MyFigure::Polygon polygon2(temp, graphics);
+	//polygon2.printInfomation();
+	polygon2.draw();
+
     //Pen pen(Color(255, 0, 0, 255));
     //graphics.DrawLine(&pen, 0, 0, 200, 100);  // Vẽ đường thẳng trong cửa sổ GUI
 }
