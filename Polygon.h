@@ -15,7 +15,7 @@ namespace MyFigure
 	{
 	private:
 		xml_node<>* rootNode;
-		SVGAttributes attributes;
+		SVGAttributes attributes;// no default constructor must be initilized
 		vector <MyPoint::Point> points;
 		Graphics &graphics;
 	public:

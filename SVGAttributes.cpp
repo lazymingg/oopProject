@@ -1,11 +1,46 @@
-#include "SVGAttributes.h"
+﻿#include "SVGAttributes.h"
 
 // Constructor
-SVGAttributes::SVGAttributes()
+SVGAttributes::SVGAttributes(xml_node<>* polygonNode)
     : fill("none"), stroke("none"), strokeWidth(1.0f), opacity(1.0f),
     fillOpacity(1.0f), strokeOpacity(1.0f),
     strokeLinecap("butt"), strokeLinejoin("miter"),
-    strokeDasharray(""), transform("") {}
+    strokeDasharray(""), transform("") 
+{
+	xml_attribute<>* attribute = polygonNode->first_attribute();
+	while (attribute != NULL)
+	{
+		std::string name = attribute->name();
+		std::string value = attribute->value();
+		if (name == "fill")
+		{
+			setFillColor(value);
+			setFill(value);
+		}
+		else if (name == "stroke")
+		{
+			setStrokeColor(value);
+			setStroke(value);
+		}
+		else if (name == "stroke-width")
+			setStrokeWidth(stof(value));
+		else if (name == "opacity")
+			setOpacity(stof(value));
+		else if (name == "fill-opacity")
+			setFillOpacity(stof(value));
+		else if (name == "stroke-opacity")
+			setStrokeOpacity(stof(value));
+		else if (name == "stroke-linecap")
+			setStrokeLinecap(value);
+		else if (name == "stroke-linejoin")
+			setStrokeLinejoin(value);
+		else if (name == "stroke-dasharray")
+			setStrokeDasharray(value);
+		else if (name == "transform")
+			setTransform(value);
+		attribute = attribute->next_attribute();
+	}
+}
 
 // Getters and setters
 void SVGAttributes::setFill(const std::string& color) { fill = color; }

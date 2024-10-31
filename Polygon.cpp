@@ -5,43 +5,8 @@ using namespace std;
 using namespace rapidxml;
 
 MyFigure::Polygon::Polygon(xml_node<>* rootNode, Gdiplus::Graphics& graphics)
-    : rootNode(rootNode), graphics(graphics)
+	: rootNode(rootNode), graphics(graphics), attributes(rootNode)
 {
-    // Đặt các thuộc tính từ XML
-    xml_attribute<>* attribute = rootNode->first_attribute();
-    while (attribute != NULL)
-    {
-        string name = attribute->name();
-        string value = attribute->value();
-        if (name == "fill")
-        {
-			attributes.setFillColor(value);
-            attributes.setFill(value);
-        }
-        else if (name == "stroke")
-        {
-			attributes.setStrokeColor(value);
-            attributes.setStroke(value);
-        }
-        else if (name == "stroke-width")
-            attributes.setStrokeWidth(stof(value));
-        else if (name == "opacity")
-            attributes.setOpacity(stof(value));
-        else if (name == "fill-opacity")
-            attributes.setFillOpacity(stof(value));
-        else if (name == "stroke-opacity")
-            attributes.setStrokeOpacity(stof(value));
-        else if (name == "stroke-linecap")
-            attributes.setStrokeLinecap(value);
-        else if (name == "stroke-linejoin")
-            attributes.setStrokeLinejoin(value);
-        else if (name == "stroke-dasharray")
-            attributes.setStrokeDasharray(value);
-        else if (name == "transform")
-            attributes.setTransform(value);
-        attribute = attribute->next_attribute();
-    }
-
     // Đặt các điểm từ thuộc tính "points"
     string points = rootNode->first_attribute("points")->value();
     stringstream ss(points);
@@ -84,7 +49,7 @@ void MyFigure::Polygon::draw()
 			pointArray[i].X = points[i].getX();
 			pointArray[i].Y = points[i].getY();
 		}
-		graphics.FillPolygon(&brush, pointArray, points.size());
+		graphics.FillPolygon(&brush, pointArray, (int)points.size());
 		delete[] pointArray;
 	}
 	//draw stroke

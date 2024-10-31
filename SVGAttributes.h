@@ -5,9 +5,10 @@
 #include <iostream>
 #include <Windows.h>
 #include <gdiplus.h>
+#include "extendLib/rapid_xml/rapidxml.hpp"
 
 #pragma comment(lib, "Gdiplus.lib")
-
+using namespace rapidxml;
 class SVGAttributes {
 private:
     std::string fill;            // Màu lấp đầy
@@ -20,13 +21,12 @@ private:
     std::string strokeLinejoin;  // Kiểu nối viền
     std::string strokeDasharray; // Mẫu nét đứt
     std::string transform;       // Biến đổi hình dạng
-
 	Gdiplus::Color fillColor;             // Màu lấp đầy dạng Color
 	Gdiplus::Color strokeColor;           // Màu viền dạng Color
 
 public:
     // Constructor
-    SVGAttributes();
+    SVGAttributes(xml_node<>* polygonNode);
 
     // Getters and setters
     void setFill(const std::string& color);

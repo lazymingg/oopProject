@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "D:\\HK4\\oop\\theory\\oopProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\SVGReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:SVGReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\Polygon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:Polygon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\Polygon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:Polygon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\SVGReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:SVGReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\SVGParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:SVGParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\SVGAttributes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:SVGAttributes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\Polygon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:Polygon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\Line.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:Line.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\Point.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:Point.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\Polygon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:Polygon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\SVGAttributes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:SVGAttributes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\SVGAttributes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:SVGAttributes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\Line.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|solutionrelative:Line.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC73B842-9B42-4C85-B4CA-E0D0B084515C}|SVGReader.vcxproj|D:\\HK4\\oop\\theory\\oopProject\\Figure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -90,17 +90,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Polygon.cpp",
               "DocumentMoniker": "D:\\HK4\\oop\\theory\\oopProject\\Polygon.cpp",
               "RelativeDocumentMoniker": "Polygon.cpp",
               "ToolTip": "D:\\HK4\\oop\\theory\\oopProject\\Polygon.cpp",
               "RelativeToolTip": "Polygon.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAnwDAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-30T13:42:51.171Z",
               "EditorCaption": ""
@@ -113,27 +113,27 @@
               "RelativeDocumentMoniker": "SVGParser.cpp",
               "ToolTip": "D:\\HK4\\oop\\theory\\oopProject\\SVGParser.cpp",
               "RelativeToolTip": "SVGParser.cpp",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-24T07:31:26.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SVGAttributes.cpp",
               "DocumentMoniker": "D:\\HK4\\oop\\theory\\oopProject\\SVGAttributes.cpp",
               "RelativeDocumentMoniker": "SVGAttributes.cpp",
               "ToolTip": "D:\\HK4\\oop\\theory\\oopProject\\SVGAttributes.cpp",
               "RelativeToolTip": "SVGAttributes.cpp",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAIwHoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-31T01:02:39.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Point.cpp",
               "DocumentMoniker": "D:\\HK4\\oop\\theory\\oopProject\\Point.cpp",
               "RelativeDocumentMoniker": "Point.cpp",
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Line.cpp",
               "DocumentMoniker": "D:\\HK4\\oop\\theory\\oopProject\\Line.cpp",
               "RelativeDocumentMoniker": "Line.cpp",
@@ -183,39 +183,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "SVGAttributes.h",
               "DocumentMoniker": "D:\\HK4\\oop\\theory\\oopProject\\SVGAttributes.h",
               "RelativeDocumentMoniker": "SVGAttributes.h",
               "ToolTip": "D:\\HK4\\oop\\theory\\oopProject\\SVGAttributes.h",
               "RelativeToolTip": "SVGAttributes.h",
-              "ViewState": "AgIAADIAAAAAAAAAAAAnwEMAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-30T13:40:04.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SVGReader.cpp",
               "DocumentMoniker": "D:\\HK4\\oop\\theory\\oopProject\\SVGReader.cpp",
               "RelativeDocumentMoniker": "SVGReader.cpp",
               "ToolTip": "D:\\HK4\\oop\\theory\\oopProject\\SVGReader.cpp",
               "RelativeToolTip": "SVGReader.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAnwFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-24T07:26:51.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Polygon.h",
               "DocumentMoniker": "D:\\HK4\\oop\\theory\\oopProject\\Polygon.h",
               "RelativeDocumentMoniker": "Polygon.h",
               "ToolTip": "D:\\HK4\\oop\\theory\\oopProject\\Polygon.h",
               "RelativeToolTip": "Polygon.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwAsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-28T13:38:45.068Z",
               "EditorCaption": ""
