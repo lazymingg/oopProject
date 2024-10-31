@@ -39,6 +39,7 @@
     <ClInclude Include="SVGParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+
     <ClInclude Include="Ellipse.h">
 	  <Filter>Header Files</Filter>
 	</ClInclude>
