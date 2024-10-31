@@ -1,36 +1,36 @@
 #include "Point.h"
 
-Point::Point()
+MyPoint::Point::Point()
 {
     x = 0;
     y = 0;
 }
-Point::Point(double x, double y)
+MyPoint::Point::Point(int x, int y)
 {
     this->x = x;
     this->y = y;
 }
-Point::~Point()
+MyPoint::Point::~Point()
 {
     //nothing to do here
 }
-void Point::setX(double x)
+void MyPoint::Point::setX(int x)
 {
     this->x = x;
 }
-void Point::setY(double y)
+void MyPoint::Point::setY(int y)
 {
     this->y = y;
 }
-double Point::getX()
+int MyPoint::Point::getX()
 {
     return x;
 }
-double Point::getY()
+int MyPoint::Point::getY()
 {
     return y;
 }
-void Point::print()
+void MyPoint::Point::print()
 {
     cout << "Point: (" << x << ", " << y << ")" << endl;
 }

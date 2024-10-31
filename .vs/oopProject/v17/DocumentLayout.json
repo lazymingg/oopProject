@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SVGReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Polygon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Polygon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Polygon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Polygon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGAttributes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SVGAttributes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SVGParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Figure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Figure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Line.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -58,50 +62,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Polygon.h",
+              "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Polygon.h",
+              "RelativeDocumentMoniker": "Polygon.h",
+              "ToolTip": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Polygon.h",
+              "RelativeToolTip": "Polygon.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-31T10:53:47.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SVGReader.cpp",
-              "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGReader.cpp",
-              "RelativeDocumentMoniker": "SVGReader.cpp",
-              "ToolTip": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGReader.cpp",
-              "RelativeToolTip": "SVGReader.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAMAAAAAAAAAA==",
+              "Title": "Polygon.cpp",
+              "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Polygon.cpp",
+              "RelativeDocumentMoniker": "Polygon.cpp",
+              "ToolTip": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Polygon.cpp",
+              "RelativeToolTip": "Polygon.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-30T11:34:08.305Z",
+              "WhenOpened": "2024-10-31T10:53:46.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Figure.cpp",
-              "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Figure.cpp",
-              "RelativeDocumentMoniker": "Figure.cpp",
-              "ToolTip": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Figure.cpp",
-              "RelativeToolTip": "Figure.cpp",
+              "Title": "SVGAttributes.cpp",
+              "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGAttributes.cpp",
+              "RelativeDocumentMoniker": "SVGAttributes.cpp",
+              "ToolTip": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGAttributes.cpp",
+              "RelativeToolTip": "SVGAttributes.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-30T11:33:57.786Z",
+              "WhenOpened": "2024-10-31T10:52:03.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SVGParser.cpp",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGParser.cpp",
               "RelativeDocumentMoniker": "SVGParser.cpp",
               "ToolTip": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGParser.cpp",
               "RelativeToolTip": "SVGParser.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-30T11:33:35.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Line.cpp",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Line.cpp",
               "RelativeDocumentMoniker": "Line.cpp",
@@ -109,12 +126,11 @@
               "RelativeToolTip": "Line.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-30T11:31:50.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:31:50.957Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Point.h",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Point.h",
               "RelativeDocumentMoniker": "Point.h",
@@ -122,12 +138,11 @@
               "RelativeToolTip": "Point.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T11:31:45.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:31:45.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "targetver.h",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\targetver.h",
               "RelativeDocumentMoniker": "targetver.h",
@@ -135,12 +150,11 @@
               "RelativeToolTip": "targetver.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T11:31:34.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:31:34.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SVGReader.h",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGReader.h",
               "RelativeDocumentMoniker": "SVGReader.h",
@@ -148,12 +162,11 @@
               "RelativeToolTip": "SVGReader.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T11:31:27.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:31:27.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SVGParser.h",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\SVGParser.h",
               "RelativeDocumentMoniker": "SVGParser.h",
@@ -161,12 +174,11 @@
               "RelativeToolTip": "SVGParser.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T11:31:15.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:31:15.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Resource.h",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Resource.h",
               "RelativeDocumentMoniker": "Resource.h",
@@ -174,12 +186,11 @@
               "RelativeToolTip": "Resource.h",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T11:31:10.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:31:10.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Line.h",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Line.h",
               "RelativeDocumentMoniker": "Line.h",
@@ -187,12 +198,11 @@
               "RelativeToolTip": "Line.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T11:31:05.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:31:05.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Figure.h",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\Figure.h",
               "RelativeDocumentMoniker": "Figure.h",
@@ -200,12 +210,11 @@
               "RelativeToolTip": "Figure.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T11:31:02.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:31:02.391Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "framework.h",
               "DocumentMoniker": "D:\\Data\\Learning\\University\\Year 2\\Semester 4\\OOP\\project\\oopProject\\framework.h",
               "RelativeDocumentMoniker": "framework.h",
@@ -213,8 +222,7 @@
               "RelativeToolTip": "framework.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T11:30:53.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T11:30:53.066Z"
             }
           ]
         }
