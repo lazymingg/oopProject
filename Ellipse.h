@@ -1,31 +1,28 @@
-#ifndef ELLIPSE_H
-#define ELLIPSE_H
+#ifndef _ELLIPSE_H
+#define _ELLIPSE_H
 
 #include "Figure.h"
 #include "Point.h"
 
-namespace MyFigure {
+using namespace Gdiplus;
+using namespace rapidxml;
+
+namespace MyFigure
+{
 	class Ellipse : public Figure
 	{
 	private:
-		xml_node<>* root_node;
+		xml_node<>* rootNode;
+		SVGAttributes attributes;
+
 		MyPoint::Point center;
 		INT rx;
 		INT ry;
-		Color strokeColor;
-		INT strokeWidth;
-		Color fill;
 		Graphics& graphics;
+
 	public:
-		// Default constructor
-		Ellipse();
-
-		// Parameterized constructor
-		Ellipse(MyPoint::Point center, INT rx, INT ry, Color strokeColor, INT strokeWidth, Color fill);
-
-		// Copy constructor
-		Ellipse(const Ellipse& other);
-
+		// Parameterized constructor: form rootNode
+		Ellipse(xml_node<>* rootNode, Gdiplus::Graphics& graphics);
 		void drawEllipse(Graphics& graphics);
 		void draw() override;
 	};

@@ -2,6 +2,7 @@
 #include <objidl.h>
 #include <gdiplus.h>
 #include <iostream>
+#include "Ellipse.h"
 #include "Polygon.h"    
 #include "SVGParser.h"
 using namespace Gdiplus;
@@ -12,6 +13,8 @@ VOID OnPaint(HDC hdc)
 	SVGParser parser;
 	parser.loadFile("sample.svg");
 	xml_node<>* temp = parser.getRootNodeName("polygon");
+    xml_node<>* ellipseRoot = parser.getRootNodeName("ellipse");
+
     Graphics graphics(hdc);
 	MyFigure::Polygon polygon(temp, graphics);
 	//polygon.printInfomation();
@@ -21,6 +24,9 @@ VOID OnPaint(HDC hdc)
 	MyFigure::Polygon polygon2(temp, graphics);
 	//polygon2.printInfomation();
 	polygon2.draw();
+
+    MyFigure::Ellipse ellipse(ellipseRoot, graphics);
+    ellipse.draw();
 
     //Pen pen(Color(255, 0, 0, 255));
     //graphics.DrawLine(&pen, 0, 0, 200, 100);  // Vẽ đường thẳng trong cửa sổ GUI

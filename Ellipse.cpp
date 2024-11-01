@@ -1,51 +1,23 @@
 #include "Ellipse.h"
 
-// Default constructor
-MyFigure::Ellipse::Ellipse()
-{
-	root_node = nullptr;
-	center = MyPoint::Point();
-	strokeColor = fill = Color(0, 0, 0, 0);
-	graphic
+MyFigure::Ellipse::Ellipse(xml_node<>* rootNode, Gdiplus::Graphics& graphics)
+    : rootNode(rootNode), graphics(graphics), attributes(rootNode) {
+    
+    center.setX(stoi(rootNode->first_attribute("cx")->value()));
+    center.setY(stoi(rootNode->first_attribute("cy")->value()));
+    rx = stoi(rootNode->first_attribute("rx")->value());
+    ry = stoi(rootNode->first_attribute("ry")->value());
 }
 
-// Parameterized constructor
-MyFigure::Ellipse::Ellipse(MyPoint::Point center, INT rx, INT ry, Color strokeColor, INT strokeWidth, Color fill)
-{
-	this->center = MyPoint::Point(center);
+void MyFigure::Ellipse::drawEllipse(Graphics& graphics) {
+    SolidBrush fillBrush(attributes.getFillColor());
+    Pen strokePen(attributes.getStrokeColor(), attributes.getStrokeWidth());
 
-	this->rx = rx;
-	this->ry = ry;
-
-	this->strokeColor = strokeColor;
-	this->strokeWidth = strokeWidth;
-	this->fill = fill;
+    graphics.FillEllipse(&fillBrush, center.getX() - rx, center.getY() - ry, rx * 2, ry * 2);
+    graphics.DrawEllipse(&strokePen, center.getX() - rx, center.getY() - ry, rx * 2, ry * 2);
 }
 
-// Copy constructor
-MyFigure::Ellipse::Ellipse(const Ellipse& other)
-{
-	this->center = MyPoint::Point(other.center);
-
-	this->rx = other.rx;
-	this->ry = other.ry;
-
-	this->strokeColor = other.strokeColor;
-	this->strokeWidth = other.strokeWidth;
-	this->fill = other.fill;
-}
-
-void MyFigure::Ellipse::drawEllipse(Graphics& graphics)
-{
-	SolidBrush fillBrush(fill);
-	Pen strokePen(strokeColor, strokeWidth);
-
-	graphics.FillEllipse(&fillBrush, center.getX() - rx, center.getY() - ry, rx * 2, ry * 2);
-	graphics.DrawEllipse(&strokePen, center.getX() - rx, center.getY() - ry, rx * 2, ry * 2);
-}
-
-void MyFigure::Ellipse::draw()
-{
-	cout << "Draw Ellipse\n";
-	drawEllipse()
+void MyFigure::Ellipse::draw() {
+    std::cout << "Draw Ellipse\n";
+    drawEllipse(graphics);
 }
