@@ -7,7 +7,7 @@
 #include <gdiplus.h>
 #include "extendLib/rapid_xml/rapidxml.hpp"
 
-#pragma comment(lib, "Gdiplus.lib")
+
 using namespace rapidxml;
 class SVGAttributes {
 private:
@@ -23,6 +23,7 @@ private:
     std::string transform;       // Biến đổi hình dạng
 	Gdiplus::Color fillColor;             // Màu lấp đầy dạng Color
 	Gdiplus::Color strokeColor;           // Màu viền dạng Color
+    std::string text;            //Chữ của định dạng text
 
 public:
     // Constructor
@@ -67,6 +68,9 @@ public:
 
     void setStrokeColor(std:: string str);
 	Gdiplus::Color getStrokeColor() const;
+
+    void setText(std::string tex);
+    std::string getText() const;
 };
 
 #endif // _SVGATTRIBUTES_H_

@@ -5,7 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include "extendLib\rapid_xml\rapidxml.hpp"
-
+#include <cstring>
 
 using namespace rapidxml;
 using namespace std;

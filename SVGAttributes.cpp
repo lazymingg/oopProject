@@ -1,13 +1,13 @@
 ﻿#include "SVGAttributes.h"
 
 // Constructor
-SVGAttributes::SVGAttributes(xml_node<>* polygonNode)
-    : fill("none"), stroke("none"), strokeWidth(1.0f), opacity(1.0f),
-    fillOpacity(1.0f), strokeOpacity(1.0f),
-    strokeLinecap("butt"), strokeLinejoin("miter"),
-    strokeDasharray(""), transform("") 
+SVGAttributes::SVGAttributes(xml_node<> *polygonNode)
+	: fill("none"), stroke("none"), strokeWidth(1.0f), opacity(1.0f),
+	  fillOpacity(1.0f), strokeOpacity(1.0f),
+	  strokeLinecap("butt"), strokeLinejoin("miter"),
+	  strokeDasharray(""), transform(""), text("")
 {
-	xml_attribute<>* attribute = polygonNode->first_attribute();
+	xml_attribute<> *attribute = polygonNode->first_attribute();
 	while (attribute != NULL)
 	{
 		std::string name = attribute->name();
@@ -40,13 +40,19 @@ SVGAttributes::SVGAttributes(xml_node<>* polygonNode)
 			setTransform(value);
 		attribute = attribute->next_attribute();
 	}
+
+	// Handle text content separately
+    if (polygonNode->value() && strlen(polygonNode->value()) > 0)
+    {
+        setText(polygonNode->value());
+    }
 }
 
 // Getters and setters
-void SVGAttributes::setFill(const std::string& color) { fill = color; }
+void SVGAttributes::setFill(const std::string &color) { fill = color; }
 std::string SVGAttributes::getFill() const { return fill; }
 
-void SVGAttributes::setStroke(const std::string& color) { stroke = color; }
+void SVGAttributes::setStroke(const std::string &color) { stroke = color; }
 std::string SVGAttributes::getStroke() const { return stroke; }
 
 void SVGAttributes::setStrokeWidth(float width) { strokeWidth = width; }
@@ -61,33 +67,38 @@ float SVGAttributes::getFillOpacity() const { return fillOpacity; }
 void SVGAttributes::setStrokeOpacity(float value) { strokeOpacity = value; }
 float SVGAttributes::getStrokeOpacity() const { return strokeOpacity; }
 
-void SVGAttributes::setStrokeLinecap(const std::string& cap) { strokeLinecap = cap; }
+void SVGAttributes::setStrokeLinecap(const std::string &cap) { strokeLinecap = cap; }
 std::string SVGAttributes::getStrokeLinecap() const { return strokeLinecap; }
 
-void SVGAttributes::setStrokeLinejoin(const std::string& join) { strokeLinejoin = join; }
+void SVGAttributes::setStrokeLinejoin(const std::string &join) { strokeLinejoin = join; }
 std::string SVGAttributes::getStrokeLinejoin() const { return strokeLinejoin; }
 
-void SVGAttributes::setStrokeDasharray(const std::string& dash) { strokeDasharray = dash; }
+void SVGAttributes::setStrokeDasharray(const std::string &dash) { strokeDasharray = dash; }
 std::string SVGAttributes::getStrokeDasharray() const { return strokeDasharray; }
 
-void SVGAttributes::setTransform(const std::string& trans) { transform = trans; }
+void SVGAttributes::setTransform(const std::string &trans) { transform = trans; }
 std::string SVGAttributes::getTransform() const { return transform; }
 
+void SVGAttributes::setText(std::string tex) { text = tex; };
+std::string SVGAttributes::getText() const { return text; };
+
 // Print attributes
-void SVGAttributes::printAttributes() const {
-    std::cout << "Fill: " << fill << "\n"
-        << "Stroke: " << stroke << "\n"
-        << "Stroke Width: " << strokeWidth << "\n"
-        << "Opacity: " << opacity << "\n"
-        << "Fill Opacity: " << fillOpacity << "\n"
-        << "Stroke Opacity: " << strokeOpacity << "\n"
-        << "Stroke Linecap: " << strokeLinecap << "\n"
-        << "Stroke Linejoin: " << strokeLinejoin << "\n"
-        << "Stroke Dasharray: " << strokeDasharray << "\n"
-        << "Transform: " << transform << "\n";
+void SVGAttributes::printAttributes() const
+{
+	std::cout << "Fill: " << fill << "\n"
+			  << "Stroke: " << stroke << "\n"
+			  << "Stroke Width: " << strokeWidth << "\n"
+			  << "Opacity: " << opacity << "\n"
+			  << "Fill Opacity: " << fillOpacity << "\n"
+			  << "Stroke Opacity: " << strokeOpacity << "\n"
+			  << "Stroke Linecap: " << strokeLinecap << "\n"
+			  << "Stroke Linejoin: " << strokeLinejoin << "\n"
+			  << "Stroke Dasharray: " << strokeDasharray << "\n"
+			  << "Transform: " << transform << "\n"
+			  << "Text: " << text << "\n";
 }
 
-//string format = "rgb(255, 0, 0)";
+// string format = "rgb(255, 0, 0)";
 void SVGAttributes::setFillColor(std::string str)
 {
 	if (str == "none")

@@ -2,28 +2,27 @@
 #include <objidl.h>
 #include <gdiplus.h>
 #include <iostream>
-#include "Polygon.h"    
+
+#include "Text.h"
 #include "SVGParser.h"
 using namespace Gdiplus;
 #pragma comment(lib, "Gdiplus.lib")
-
+// hello ming
 VOID OnPaint(HDC hdc)
 {
-	SVGParser parser;
-	parser.loadFile("sample.svg");
-	xml_node<>* temp = parser.getRootNodeName("polygon");
-    Graphics graphics(hdc);
-	MyFigure::Polygon polygon(temp, graphics);
-	//polygon.printInfomation();
-	polygon.draw();
-	//draw next polygon
-	temp = temp->next_sibling("polygon");
-	MyFigure::Polygon polygon2(temp, graphics);
-	//polygon2.printInfomation();
-	polygon2.draw();
+    SVGParser parser;
+    parser.loadFile("sample.svg");
+    //parser.print();
+    xml_node<> *temp = nullptr;
 
-    //Pen pen(Color(255, 0, 0, 255));
-    //graphics.DrawLine(&pen, 0, 0, 200, 100);  // Vẽ đường thẳng trong cửa sổ GUI
+    temp = parser.getRootNodeName("text");
+    Graphics graphics(hdc);
+    MyFigure::Text text(temp, graphics);
+    text.printInfomation();
+   text.draw();
+
+    // Pen pen(Color(255, 0, 0, 255));
+    // graphics.DrawLine(&pen, 0, 0, 200, 100);  // Vẽ đường thẳng trong cửa sổ GUI
 }
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -32,10 +31,10 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, PSTR, INT iCmdShow)
 {
     // Tạo cửa sổ console để xem output
     AllocConsole();
-    FILE* stream;
-    freopen_s(&stream, "CONOUT$", "w", stdout);  // Chuyển hướng std::cout đến console
-    freopen_s(&stream, "CONOUT$", "w", stderr);  // Chuyển hướng std::cerr đến console
-    freopen_s(&stream, "CONIN$", "r", stdin);    // Chuyển hướng std::cin đến console
+    FILE *stream;
+    freopen_s(&stream, "CONOUT$", "w", stdout); // Chuyển hướng std::cout đến console
+    freopen_s(&stream, "CONOUT$", "w", stderr); // Chuyển hướng std::cerr đến console
+    freopen_s(&stream, "CONIN$", "r", stdin);   // Chuyển hướng std::cin đến console
 
     HWND hWnd;
     MSG msg;
@@ -60,17 +59,17 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, PSTR, INT iCmdShow)
     RegisterClass(&wndClass);
 
     hWnd = CreateWindow(
-        TEXT("GettingStarted"),   // Tên lớp cửa sổ
-        TEXT("Getting Started"),  // Tiêu đề cửa sổ
-        WS_OVERLAPPEDWINDOW,      // Kiểu cửa sổ
-        CW_USEDEFAULT,            // Vị trí x ban đầu
-        CW_USEDEFAULT,            // Vị trí y ban đầu
-        CW_USEDEFAULT,            // Kích thước x ban đầu
-        CW_USEDEFAULT,            // Kích thước y ban đầu
-        NULL,                     // Handle cửa sổ cha
-        NULL,                     // Handle menu cửa sổ
-        hInstance,                // Handle instance chương trình
-        NULL);                    // Tham số khởi tạo
+        TEXT("GettingStarted"),  // Tên lớp cửa sổ
+        TEXT("Getting Started"), // Tiêu đề cửa sổ
+        WS_OVERLAPPEDWINDOW,     // Kiểu cửa sổ
+        CW_USEDEFAULT,           // Vị trí x ban đầu
+        CW_USEDEFAULT,           // Vị trí y ban đầu
+        CW_USEDEFAULT,           // Kích thước x ban đầu
+        CW_USEDEFAULT,           // Kích thước y ban đầu
+        NULL,                    // Handle cửa sổ cha
+        NULL,                    // Handle menu cửa sổ
+        hInstance,               // Handle instance chương trình
+        NULL);                   // Tham số khởi tạo
 
     ShowWindow(hWnd, iCmdShow);
     UpdateWindow(hWnd);

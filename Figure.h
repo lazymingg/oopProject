@@ -1,12 +1,12 @@
 #ifndef _FIGURE_H_
 #define _FIGURE_H_
 
-#include "Figure.h"
 #include "extendLib/rapid_xml/rapidxml.hpp"
 #include "SVGAttributes.h"
 #include <windows.h>
 #include <gdiplus.h>
-using namespace Gdiplus;
+#include <objidl.h>
+
 #pragma comment (lib,"Gdiplus.lib")
 
 using namespace std;
