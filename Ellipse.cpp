@@ -18,6 +18,7 @@ void MyFigure::Ellipse::drawEllipse(Graphics& graphics) {
 }
 
 void MyFigure::Ellipse::draw() {
-    std::cout << "Draw Ellipse\n";
+    std::cout << "Draw Ellipse: center = (" << center.getX() << ", " << center.getY() << "), ";
+    std::cout << "rx = " << rx << ", ry = " << ry << "\n\n";
     drawEllipse(graphics);
 }
