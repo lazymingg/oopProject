@@ -6,7 +6,7 @@
 #include "SVGParser.h"
 using namespace Gdiplus;
 #pragma comment(lib, "Gdiplus.lib")
-
+// hello ming
 VOID OnPaint(HDC hdc)
 {
 	SVGParser parser;
