@@ -43,8 +43,8 @@ void MyFigure::Polyline::draw()
         // create point array
         int numPoints = points.size();
 
-        //Use library POINT to draw
-        Point* pointArray = new Point[numPoints];
+        // Use library POINT to draw
+        Point *pointArray = new Point[numPoints];
         for (int i = 0; i < numPoints; i++)
         {
             pointArray[i].X = points[i].getX();
@@ -69,7 +69,7 @@ void MyFigure::Polyline::draw()
 
         // create point array
         int numPoints = points.size();
-        Point* pointArray = new Point[numPoints];
+        Point *pointArray = new Point[numPoints];
         for (int i = 0; i < numPoints; i++)
         {
             pointArray[i].X = points[i].getX();
@@ -81,6 +81,26 @@ void MyFigure::Polyline::draw()
         graphics.DrawLines(&pen, pointArray, numPoints);
 
         // free memory
+        delete[] pointArray;
+    }
+    {
+        int opacity = attributes.getStrokeOpacity() * 255;
+        Pen pen(Color(opacity, 0, 0, 0)); // Default pen with transparent color
+
+        // Create point array
+        int numPoints = points.size();
+        Point *pointArray = new Point[numPoints];
+        for (int i = 0; i < numPoints; i++)
+        {
+            pointArray[i].X = points[i].getX();
+            pointArray[i].Y = points[i].getY();
+        }
+
+        // Draw polyline
+        graphics.SetSmoothingMode(SmoothingMode::SmoothingModeAntiAlias);
+        graphics.DrawLines(&pen, pointArray, numPoints);
+
+        // Free memory
         delete[] pointArray;
     }
 }
