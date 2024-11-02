@@ -54,11 +54,11 @@ VOID OnPaint(HDC hdc)
             MyFigure::Ellipse ellipse(node, graphics);
             ellipse.draw();
         }
-        // else if (shape == "circle")
-        // {
-        //     MyFigure::Circle circle(node, graphics);
-        //     circle.draw();
-        // }
+        else if (shape == "circle")
+        {
+            MyFigure::Circle circle(node, graphics);
+            circle.draw();
+        }
     }
 }
 

@@ -8,4 +8,5 @@
 #include "Ellipse.h"
 #include "Line.h"
 #include "Polyline.h"
+#include "Circle.h"
 #endif

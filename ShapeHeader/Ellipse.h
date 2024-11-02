@@ -1,4 +1,4 @@
-#ifndef _ELLIPSE_H
+﻿#ifndef _ELLIPSE_H
 #define _ELLIPSE_H
 
 #include "Figure.h"
@@ -11,7 +11,7 @@ namespace MyFigure
 {
 	class Ellipse : public Figure
 	{
-	private:
+	protected:
 		xml_node<>* rootNode;
 		SVGAttributes attributes;
 
