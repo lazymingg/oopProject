@@ -1,0 +1,5 @@
+#include "Point.h"
+#include "Polygon.h"
+#include "Rectangle.h"
+#include "Text.h"
+#include "Ellipse.h"

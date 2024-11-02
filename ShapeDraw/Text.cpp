@@ -1,4 +1,4 @@
-#include "Text.h"
+#include "../ShapeHeader/Text.h"
 using namespace Gdiplus;
 using namespace std;
 using namespace rapidxml;

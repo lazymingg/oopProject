@@ -1,5 +1,5 @@
-#ifndef _RECTANGLE_H_
-#define _RECTANGLE_H_
+#ifndef _TEXT_H_
+#define _TEXT_H_
 
 #include "Figure.h"
 #include "Point.h"

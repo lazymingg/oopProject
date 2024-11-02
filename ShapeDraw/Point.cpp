@@ -1,4 +1,4 @@
-#include "Point.h"
+#include "../ShapeHeader/Point.h"
 
 MyPoint::Point::Point()
 {

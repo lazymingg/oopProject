@@ -1,4 +1,4 @@
-#include "Polyline.h"
+#include "../ShapeHeader/Polyline.h"
 using namespace Gdiplus;
 using namespace std;
 using namespace rapidxml;
@@ -42,6 +42,8 @@ void MyFigure::Polyline::draw()
 
         // create point array
         int numPoints = points.size();
+
+        //Use library POINT to draw
         Point* pointArray = new Point[numPoints];
         for (int i = 0; i < numPoints; i++)
         {

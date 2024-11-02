@@ -1,8 +1,8 @@
 #ifndef _FIGURE_H_
 #define _FIGURE_H_
 
-#include "extendLib/rapid_xml/rapidxml.hpp"
-#include "SVGAttributes.h"
+#include "../extendLib/rapid_xml/rapidxml.hpp"
+#include "../SVGAttributes.h"
 #include <windows.h>
 #include <gdiplus.h>
 #include <objidl.h>

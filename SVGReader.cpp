@@ -2,8 +2,7 @@
 #include <objidl.h>
 #include <gdiplus.h>
 #include <iostream>
-
-#include "Text.h"
+#include "ShapeHeader/Shape.h"
 #include "SVGParser.h"
 using namespace Gdiplus;
 #pragma comment(lib, "Gdiplus.lib")
@@ -14,12 +13,15 @@ VOID OnPaint(HDC hdc)
     parser.loadFile("sample.svg");
     //parser.print();
     xml_node<> *temp = nullptr;
-
     temp = parser.getRootNodeName("text");
+    do
+    {
     Graphics graphics(hdc);
     MyFigure::Text text(temp, graphics);
     text.printInfomation();
+    temp = temp->next_sibling("text");
    text.draw();
+    } while (temp != nullptr);
 
     // Pen pen(Color(255, 0, 0, 255));
     // graphics.DrawLine(&pen, 0, 0, 200, 100);  // Vẽ đường thẳng trong cửa sổ GUI
