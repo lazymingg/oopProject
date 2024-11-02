@@ -22,6 +22,7 @@ public:
     ~SVGParser();
     void loadFile(const string& filename);
 	xml_node<>* getRootNodeName(string nodeName);
+	xml_node<>* getRootNode();
     void print();
 };
 

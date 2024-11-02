@@ -73,6 +73,11 @@ xml_node<>* SVGParser::getRootNodeName(string nodeName)
     return nullptr;
 }
 
+xml_node<> *SVGParser::getRootNode()
+{
+    return root_node;
+}
+
 void SVGParser::print()
 {
     // for (xml_node<> *node = root_node->first_node(); node; node = node->next_sibling())

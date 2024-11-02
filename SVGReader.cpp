@@ -9,22 +9,57 @@ using namespace Gdiplus;
 // hello ming
 VOID OnPaint(HDC hdc)
 {
+    bool isNameFile = false;
     SVGParser parser;
     parser.loadFile("sample.svg");
-    //parser.print();
-    xml_node<> *temp = nullptr;
-    temp = parser.getRootNodeName("text");
-    do
-    {
     Graphics graphics(hdc);
-    MyFigure::Text text(temp, graphics);
-    text.printInfomation();
-    temp = temp->next_sibling("text");
-   text.draw();
-    } while (temp != nullptr);
 
-    // Pen pen(Color(255, 0, 0, 255));
-    // graphics.DrawLine(&pen, 0, 0, 200, 100);  // Vẽ đường thẳng trong cửa sổ GUI
+    xml_node<> *root_node = parser.getRootNode();
+
+    for (xml_node<> *node = root_node->first_node(); node; node = node->next_sibling())
+    {
+        string shape = node->name();
+        if (shape == "text")
+        {
+            if (!isNameFile)
+                isNameFile = true;
+            else
+            {
+                MyFigure::Text text(node, graphics);
+                text.draw();
+            }
+        }
+        else if (shape == "rect")
+        {
+            MyFigure::Rectangle rect(node, graphics);
+            rect.draw();
+        }
+        else if (shape == "line")
+        {
+            MyFigure::Line line(node, graphics);
+            line.draw();
+        }
+        else if (shape == "polygon")
+        {
+            MyFigure::Polygon polygon(node, graphics);
+            polygon.draw();
+        }
+        else if (shape == "polyline")
+        {
+            MyFigure::Polyline polyline(node, graphics);
+            polyline.draw();
+        }
+        else if (shape == "ellipse")
+        {
+            MyFigure::Ellipse ellipse(node, graphics);
+            ellipse.draw();
+        }
+        // else if (shape == "circle")
+        // {
+        //     MyFigure::Circle circle(node, graphics);
+        //     circle.draw();
+        // }
+    }
 }
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
